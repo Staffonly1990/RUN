@@ -125,6 +125,8 @@ button {
 	line-height: normal;
 }
 
+/* END My styles */
+
 /*Header*/
 
 header {
@@ -148,11 +150,14 @@ header {
 	height: 75px;
 }
 
-/* Contacts */
 .header_contacts {
 	display: flex;
 	align-items: center;
 }
+
+/* END header*/
+
+/* Contacts */
 
 .contacts_address {
 	margin-right: 15px;
@@ -479,6 +484,8 @@ header {
 	grid-gap: 15px;
 }
 
+/* END company */
+
 /* Footer */
 
 .footer {
@@ -523,3 +530,17 @@ header {
 	color: #fff;
 	margin-right: 0;
 }
+
+/* END footer */
+
+/* products */
+.products_one {
+	margin-top: 20px;
+}
+
+.products_long_block {
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* END products */
