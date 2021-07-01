@@ -35,6 +35,7 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	color: #ffffff;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -132,9 +133,76 @@ button {
 header {
 	width: 100%;
 	background-color: #060606;
-	padding-left: 15px;
-	padding-right: 15px;
 	font-size: 16px;
+}
+
+.header_main {
+	width: 100%;
+	/*height: 100vh;*/
+	background: url(../images/header_main_BG.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header_main_container {
+	padding: 45px 150px 0;
+}
+
+.header_main_contacts {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.header_main_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.header_main_text {
+	max-width: 80%;
+	font-size: 37px;
+	text-align: center;
+	line-height: 1;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+.header_main_button {
+	width: 100%;
+	text-align: center;
+}
+.header_main_button button {
+	color: #ffffff;
+	background: none;
+	border-radius: 25px;
+	border: 3px solid #ff8b3c;
+	padding: 20px 80px;
+	font-size: 30px;
+}
+
+.header_main_menu {
+	display: grid;
+	grid-template-columns: repeat(3, 33.33%);
+	font-size: 34px;
+}
+
+.main_menu_column {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+	border-top: 3px solid #ff8b3c;
+}
+
+.main_menu_column:nth-child(2) {
+	border-left: 3px solid #ff8b3c;
+	border-right: 3px solid #ff8b3c;
 }
 
 .header_content {
