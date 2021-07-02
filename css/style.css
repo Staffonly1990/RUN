@@ -80,6 +80,10 @@ select {
 
 /* My styles */
 
+.mobil {
+	display: none;
+}
+
 .blue {
 	color: #00b6f4;
 }
@@ -167,17 +171,17 @@ header {
 	padding-top: 14vh;
 }
 
-.header_main_content img{
+.header_main_content img {
 	height: 25vh;
 }
 
 .header_main_text {
 	max-width: 80%;
-	font-size: 3.7vh;
 	text-align: center;
 	line-height: 1;
 	margin-top: 6vh;
 	margin-bottom: 5vh;
+	font-size: 3.7vh;
 }
 
 .header_main_button {
@@ -187,7 +191,7 @@ header {
 .header_main_button button {
 	color: #ffffff;
 	background: none;
-	border-radius: 2.5vh;
+	border-radius: 25px;
 	border: 3px solid #ff8b3c;
 	padding: 2vh 80px;
 	font-size: 30px;
@@ -203,7 +207,7 @@ header {
 	padding-top: 6vh;
 	padding-bottom: 6vh;
 	text-align: center;
-	border-top: 3px solid #ff8b3c;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main_menu_column:nth-child(2) {
@@ -368,14 +372,14 @@ header {
 }
 
 .scale_text {
-	flex-basis: 20%;
+	flex-basis: 15%;
 }
 .scale_num {
-	flex-basis: 15%;
+	flex-basis: 10%;
 }
 
 .scale_line {
-	width: inherit;
+	flex: auto;
 }
 
 .scale_line_color.back_blue {
@@ -455,6 +459,7 @@ header {
 	margin-top: 35px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
 }
 
@@ -808,3 +813,154 @@ header {
 	border-radius: 25px;
 }
 /* END services */
+
+/* Mobil */
+
+@media screen and (max-width: 610px) {
+	.content {
+		font-size: 18px;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobil {
+		display: block;
+	}
+
+	.mobil_menu {
+		padding: 25px 30px;
+		background-color: black;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.burger_menu {
+		position: absolute;
+	}
+
+	.mobil_menu_logo {
+		margin: 0 auto;
+	}
+	.mobil_menu_logo img {
+		height: 30px;
+	}
+
+	.header_main_container {
+		padding: 13vh 65px 0;
+	}
+
+	.header_main_content {
+		padding-top: 0;
+	}
+
+	.header_main_content img {
+		height: auto;
+	}
+
+	.header_main_text {
+		max-width: 100%;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+	}
+
+	.header_main_button button {
+		padding: 1.5vh 60px;
+	}
+
+	.header_main_menu {
+		font-size: 18px;
+	}
+
+	.main_menu_column {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.content {
+		padding-top: 0;
+	}
+
+	.mobil_buttonBar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #ffffff;
+		font-size: 15px;
+	}
+
+	.mobil_buttonBar div {
+		font-size: 20px;
+	}
+
+	.mobil_buttonBar button {
+		color: #ffffff;
+		padding-left: 8.5vw;
+		padding-right: 8.5vw;
+	}
+
+	.norm {
+		width: 100%;
+	}
+
+	.company_one_present {
+	}
+
+	.company_two {
+		display: block;
+		padding-top: 15px;
+		padding-bottom: 30px;
+		font-size: 20px;
+	}
+
+	.company_two_a,
+	.company_two_b,
+	.company_two_c {
+		width: auto;
+		border: none;
+		padding: 0;
+		margin: 0 20px;
+	}
+
+	.company_two_a {
+		padding-bottom: 20px;
+	}
+
+	.company_two_b {
+		border-top: 2px #ffffff solid;
+	}
+
+	.company_two_text {
+		line-height: 1.5;
+	}
+
+	.company_two_text .blue,
+	.company_two_text .оrange {
+		font-size: 30px;
+	}
+
+	.company_two_coefficient {
+		font-size: 16px;
+	}
+
+	.coefficient_percent {
+		font-size: 28px;
+	}
+
+	.company_two_circle {
+		margin-top: 35px;
+	}
+
+	.scale {
+		flex-wrap: wrap;
+	}
+
+	.scale_text {
+		flex-basis: 100%;
+		padding-left: 10%;
+		padding-bottom: 10px;
+	}
+}
+
+/* END Mobil */
