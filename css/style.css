@@ -589,6 +589,7 @@ header {
 
 .footer_logo img {
 	height: 75px;
+	margin: 0 auto;
 }
 
 .footer_text {
@@ -739,7 +740,7 @@ header {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
-	grid-gap: 115px;
+	grid-gap: 4vw;
 }
 
 .services_one_column {
@@ -820,7 +821,7 @@ header {
 
 /* Mobil */
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1125px) {
 	.content {
 		font-size: 18px;
 	}
@@ -1185,7 +1186,6 @@ header {
 		grid-template-rows: none;
 		padding-top: 60px;
 		padding-bottom: 60px;
-		grid-gap: 60px;
 	}
 
 	.services_one_title {
@@ -1198,7 +1198,7 @@ header {
 		padding-bottom: 50px;
 	}
 
-	.services_two_content{
+	.services_two_content {
 		padding-bottom: 50px;
 		margin-bottom: 80px;
 	}
@@ -1207,7 +1207,7 @@ header {
 		font-size: 20px;
 	}
 
-	.services_two_list{
+	.services_two_list {
 		padding-right: 0;
 		padding-bottom: 50px;
 		padding-top: 50px;
@@ -1217,7 +1217,7 @@ header {
 		grid-template-columns: repeat(1, auto);
 	}
 
-	.services_two_button button{
+	.services_two_button button {
 		padding: 15px 60px;
 		border-radius: 50px;
 		font-size: 18px;
