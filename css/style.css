@@ -262,6 +262,7 @@ header {
 	padding-top: 15px;
 	color: white;
 	font-size: 21px;
+	position: relative;
 }
 
 .content_column {
@@ -460,7 +461,7 @@ header {
 .company_four_content {
 	margin-top: 35px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	width: 100%;
 }
@@ -556,6 +557,69 @@ header {
 	background-color: black;
 	color: #ffffff;
 	padding: 15px 40px;
+}
+
+.company_six_openNews {
+	display: none;
+	position: absolute;
+	bottom: 0px;
+	margin-left: -30px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.company_six_openNews.active {
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 60px;
+	padding-left: 110px;
+}
+
+.six_openNews_contain {
+	background-color: #2f2f2f;
+	width: 60%;
+	padding: 30px;
+}
+
+.six_openNews_exit {
+	max-width: 50px;
+	margin-right: 0;
+	margin-left: auto;
+	padding-bottom: 20px;
+}
+
+.six_openNews_header {
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+.six_openNews_title {
+	font-size: 30px;
+	padding-bottom: 20px;
+	font-weight: 600;
+}
+
+.six_openNews_content {
+	padding-bottom: 100px;
+	border-bottom: 2px white solid;
+}
+
+.six_openNews_content img {
+	float: left;
+	width: 50%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.six_openNews_slider {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.six_openNews_slider div {
+	display: flex;
+	align-items: center;
+	margin: 30px;
 }
 
 .company_six_right {
@@ -1125,6 +1189,61 @@ header {
 		width: 100%;
 		padding: 30px 0;
 		border: none;
+	}
+
+	.company_six_openNews.active {
+		padding-left: 0;
+		margin-left: -45px;
+		justify-content: space-evenly;
+	}
+
+	.six_openNews_contain {
+		width: auto;
+		width: calc(100% - 60px);
+	}
+
+	.six_openNews_exit {
+		max-width: 30px;
+		margin: 0 auto;
+	}
+
+	.six_openNews_header {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.six_openNews_title {
+		font-size: 21px;
+		line-height: 1;
+		padding-bottom: 15px;
+	}
+
+	.six_openNews_content {
+		padding-bottom: 75px;
+	}
+
+	.six_openNews_content img {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.openNews_content_text {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.six_openNews_contain {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.six_openNews_slider {
+		justify-content: space-around;
+		padding-top: 30px;
+	}
+
+	.six_openNews_slider div {
+		margin: 0;
 	}
 
 	.company_six_right {

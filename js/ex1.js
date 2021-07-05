@@ -127,5 +127,18 @@ burger_menu.addEventListener('click', () => {
 	}
 })
 
+const company_openNews = document.querySelector(".company_six_openNews")
+const openNews = document.querySelector(".company_six_left")
+const openNews_exit = document.querySelector(".six_openNews_exit")
 
+
+
+openNews.addEventListener('click', () => {
+	company_openNews.classList.add("active")
+})
+
+openNews_exit.addEventListener('click', (event) => {
+	company_openNews.classList.remove("active")
+	event.stopPropagation()
+})
 
