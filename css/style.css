@@ -256,7 +256,6 @@ header {
 .content {
 	width: 100%;
 	background-color: #191919;
-	background: url("../images/BG1.png"), #191919;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -562,7 +561,7 @@ header {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
-	grid-gap: 60px 90px;
+	grid-gap: 4vw;
 }
 
 /* END company */
@@ -738,7 +737,7 @@ header {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	display: grid;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(2, calc(50% - 2vw));
 	grid-template-rows: repeat(2, auto);
 	grid-gap: 4vw;
 }
@@ -821,7 +820,7 @@ header {
 
 /* Mobil */
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1024px) {
 	.content {
 		font-size: 18px;
 	}
@@ -831,12 +830,34 @@ header {
 		text-align: center;
 	}
 
+	.mobil_menu_list,
 	.desktop {
 		display: none;
 	}
 
+	.mobil_menu_list.active,
 	.mobil {
 		display: block;
+	}
+
+	.mobil_menu_conteiner {
+		width: fit-content;
+		min-width: 310px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	.mobil_menu_nav {
+		font-size: 25px;
+		line-height: 2.5;
+		padding-bottom: 15px;
+	}
+
+	.mobil_menu_contacts {
+		padding-top: 15px;
+		padding-bottom: 70px;
+		border-top: 2px #3eb4f1 solid;
+		font-size: 22px;
 	}
 
 	.mobil_menu {
@@ -857,8 +878,16 @@ header {
 		height: 30px;
 	}
 
+	.mobil_menu_list {
+		position: absolute;
+		top: 80px;
+		background-color: rgba(0, 0, 0, 0.9);
+		width: 100%;
+		margin-left: -30px;
+	}
+
 	.header_main_container {
-		padding: 10vh 65px 0;
+		padding: 4.5vh 65px 0;
 	}
 
 	.header_main_content {
@@ -901,14 +930,14 @@ header {
 		font-size: 15px;
 	}
 
-	.mobil_buttonBar div {
-		font-size: 20px;
+	.mobil_buttonBar img {
+		width: 2vw;
 	}
 
 	.mobil_buttonBar button {
 		color: #ffffff;
-		padding-left: 8.5vw;
-		padding-right: 8.5vw;
+		padding-left: 8vw;
+		padding-right: 8vw;
 	}
 
 	.norm {
