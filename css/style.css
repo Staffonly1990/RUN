@@ -354,6 +354,9 @@ header {
 	border-left: 2px #ffffff solid;
 	border-right: 2px #ffffff solid;
 	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .company_two_scales {
@@ -371,7 +374,7 @@ header {
 }
 
 .scale_text {
-	flex-basis: 15%;
+	flex-basis: 4vw;
 }
 .scale_num {
 	flex-basis: 10%;
